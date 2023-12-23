@@ -41,12 +41,12 @@ const Navbar = () => {
 
         {/* sign an dlogin button */}
         <div className="text-base text-primary font-medium space-x-5 hidden lg:block">
-          <Link to="/log-in" className="py-2 px-5 border rounded">
+          <Link to="/log-in" className="py-2 px-5 border rounded hover:text-white hover:bg-blue hover:border-1 hover:border-blue hover:duration-700 border-blue">
             Login In{" "}
           </Link>
           <Link
             to="/sign-up"
-            className="bg-blue text-white py-2 px-5 border rounded"
+            className="hover:text-blue hover:bg-white hover:border-1 hover:border-blue hover:duration-700 bg-blue text-white py-2 px-5 border rounded"
           >
             Sign Up{" "}
           </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
             ))}
-            <li className="text-white py-1"><Link to="/log-in" >
+            <li className="text-white py-1 "><Link to="/log-in" >
             Login In{" "}
           </Link></li>
           </ul>

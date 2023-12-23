@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { FiMapPin } from "react-icons/fi";
 
-const Banner = ({ query, handleInputchange }) => {
+const Banner = ({ query, handleInputchange, handleLocationSearch  }) => {
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-14">
       <h1 className=" text-5xl font-bold text-primary mb-3">
@@ -32,12 +32,14 @@ const Banner = ({ query, handleInputchange }) => {
               type="text"
               name="title"
               id="title"
-              placeholder="Location"
+              onChange={handleLocationSearch }
+              // value={query}
+              placeholder="Search by Location"
               className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-gray-900 placeholder:text-gray-400 focus:right-0 sm:text-sm sm:leading-6"
             />
             <FiMapPin className="absolute mt-2.5 ml-2 text-gray-400" />
           </div>
-          <button type="submit" className="bg-blue py-2 px-8 text-white md:rounded-s-none rounded">Search</button>
+          <button type="submit" className="bg-blue py-2 px-8 text-white md:rounded-s-none rounded hover:text-blue hover:bg-white hover:border-2 hover:border-blue hover:duration-700">Search</button>
         </div>
       </form>
     </div>
