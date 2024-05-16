@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import Jobs from "./Jobs";
-import SideBar from "../SideBar/sideBar";
+import SideBar from "../SideBar/Sidebar";
 import Newsletter from "../components/Newsletter";
 
 const Home = () => {
